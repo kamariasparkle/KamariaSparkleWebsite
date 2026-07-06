@@ -8,21 +8,17 @@ body{
 
     font-family:Arial, Helvetica, sans-serif;
 
-    color:#333;
-
 }
 
 .navbar{
 
     position:fixed;
 
+    width:100%;
+
     top:0;
 
     left:0;
-
-    width:100%;
-
-    background:white;
 
     display:flex;
 
@@ -32,9 +28,11 @@ body{
 
     padding:20px 8%;
 
-    box-shadow:0 3px 12px rgba(0,0,0,.08);
+    background:white;
 
-    z-index:999;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+
+    z-index:1000;
 
 }
 
@@ -54,7 +52,7 @@ body{
 
     list-style:none;
 
-    gap:35px;
+    gap:30px;
 
 }
 
@@ -66,8 +64,6 @@ body{
 
     font-weight:bold;
 
-    transition:.3s;
-
 }
 
 .nav-links a:hover{
@@ -77,6 +73,8 @@ body{
 }
 
 .hero{
+
+    position:relative;
 
     height:100vh;
 
@@ -88,23 +86,41 @@ body{
 
     text-align:center;
 
-    padding:20px;
+    background:url("../images/hero-placeholder.jpg");
 
-    background:linear-gradient(to right,#f8f8f8,#ffffff);
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
 
 }
 
 .hero-content{
 
-    max-width:850px;
+    position:relative;
+
+    z-index:10;
+
+    color:white;
+
+    max-width:800px;
+
+    padding:20px;
 
 }
 
 .hero h1{
 
-    font-size:65px;
-
-    color:#7A3E9D;
+    font-size:68px;
 
     margin-bottom:25px;
 
@@ -116,13 +132,11 @@ body{
 
     line-height:1.8;
 
-    color:#555;
-
     margin-bottom:45px;
 
 }
 
-.hero-buttons{
+.buttons{
 
     display:flex;
 
@@ -134,7 +148,7 @@ body{
 
 }
 
-.btn-primary{
+.btn-green{
 
     background:#8BC34A;
 
@@ -142,71 +156,43 @@ body{
 
     text-decoration:none;
 
-    padding:18px 42px;
+    padding:18px 38px;
 
-    border-radius:10px;
+    border-radius:8px;
 
     font-weight:bold;
 
-    font-size:18px;
+}
 
-    transition:.3s;
+.btn-green:hover{
+
+    background:#6ca236;
 
 }
 
-.btn-primary:hover{
+.btn-white{
 
-    background:#6fa536;
+    background:white;
 
-}
-
-.btn-secondary{
-
-    border:2px solid #7A3E9D;
-
-    color:#7A3E9D;
+    color:#333;
 
     text-decoration:none;
 
-    padding:18px 42px;
+    padding:18px 38px;
 
-    border-radius:10px;
+    border-radius:8px;
 
     font-weight:bold;
 
-    font-size:18px;
-
-    transition:.3s;
-
 }
 
-.btn-secondary:hover{
+.btn-white:hover{
 
-    background:#7A3E9D;
-
-    color:white;
+    background:#eeeeee;
 
 }
 
 @media(max-width:768px){
-
-.navbar{
-
-    flex-direction:column;
-
-    gap:20px;
-
-}
-
-.nav-links{
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-    gap:18px;
-
-}
 
 .hero h1{
 
@@ -217,6 +203,22 @@ body{
 .hero p{
 
     font-size:18px;
+
+}
+
+.navbar{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.nav-links{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
 
 }
 
