@@ -1,1 +1,0 @@
-console.log("Kamaria Sparkle Version 1.1 Loaded");

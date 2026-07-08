@@ -1,0 +1,880 @@
+/* ===========================================================
+   KAMARIA SPARKLE EVENTS
+   Version 2.0
+   Part 1 - Reset, Variables, Header & Navigation
+=========================================================== */
+
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#000;
+    color:#fff;
+    overflow-x:hidden;
+    line-height:1.6;
+
+}
+
+/* VARIABLES */
+
+:root{
+
+    --gold:#D4AF37;
+    --gold-light:#F3D77A;
+
+    --black:#000000;
+    --dark:#111111;
+
+    --white:#ffffff;
+
+    --gray:#bdbdbd;
+
+    --container:1300px;
+
+    --transition:.35s ease;
+
+}
+
+/* GLOBAL */
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+.container{
+
+    width:90%;
+    max-width:var(--container);
+    margin:auto;
+
+}
+
+/* HEADER */
+
+header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    z-index:999;
+
+    background:rgba(0,0,0,.88);
+
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(212,175,55,.18);
+
+    transition:var(--transition);
+
+}
+
+/* NAVBAR */
+
+.navbar{
+
+    width:90%;
+    max-width:1300px;
+
+    margin:auto;
+
+    height:95px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+/* LOGO */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.logo img{
+
+    height:72px;
+
+    width:auto;
+
+    transition:var(--transition);
+
+}
+
+.logo:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* NAVIGATION */
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:40px;
+
+}
+
+.nav-links a{
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    position:relative;
+
+    transition:var(--transition);
+
+}
+
+/* GOLD UNDERLINE */
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--gold);
+
+    transition:var(--transition);
+
+}
+
+.nav-links a:hover{
+
+    color:var(--gold);
+
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
+/* HAMBURGER */
+
+.menu-toggle{
+
+    display:none;
+
+    font-size:32px;
+
+    color:var(--gold);
+
+    cursor:pointer;
+
+    user-select:none;
+
+}
+/* ===========================================================
+   HERO SECTION
+=========================================================== */
+
+.hero{
+
+    position:relative;
+
+    height:100vh;
+
+    background-image:url("../images/hero-placeholder.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.55);
+
+}
+
+/* HERO CONTENT */
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    width:90%;
+
+    max-width:900px;
+
+    text-align:center;
+
+}
+
+.hero-content h1{
+
+    font-size:72px;
+
+    font-weight:700;
+
+    color:#fff;
+
+    margin-bottom:25px;
+
+    line-height:1.15;
+
+}
+
+.hero-content p{
+
+    font-size:22px;
+
+    color:#f3f3f3;
+
+    max-width:750px;
+
+    margin:auto;
+
+    margin-bottom:45px;
+
+}
+
+/* BUTTON CONTAINER */
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+/* PRIMARY BUTTON */
+
+.btn-primary{
+
+    background:var(--gold);
+
+    color:#111;
+
+    padding:18px 36px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    box-shadow:0 12px 35px rgba(212,175,55,.30);
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 18px 45px rgba(212,175,55,.45);
+
+}
+
+/* SECONDARY BUTTON */
+
+.btn-secondary{
+
+    padding:18px 36px;
+
+    border:2px solid var(--gold);
+
+    color:var(--gold);
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--gold);
+
+    color:#111;
+
+}
+
+/* SECTION SPACING */
+
+section{
+
+    padding:110px 0;
+
+}
+
+/* HEADINGS */
+
+section h2{
+
+    font-size:46px;
+
+    text-align:center;
+
+    color:var(--gold);
+
+    margin-bottom:20px;
+
+}
+
+section p{
+
+    text-align:center;
+
+    color:#d8d8d8;
+
+    max-width:800px;
+
+    margin:auto;
+
+}
+/* ===========================================================
+   WHY CHOOSE KAMARIA
+=========================================================== */
+
+.why-us{
+
+    background:#0d0d0d;
+
+}
+
+.features{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.feature-card{
+
+    background:#181818;
+
+    border:1px solid rgba(212,175,55,.15);
+
+    border-radius:20px;
+
+    padding:40px 30px;
+
+    transition:var(--transition);
+
+    text-align:center;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--gold);
+
+    box-shadow:0 20px 40px rgba(212,175,55,.18);
+
+}
+
+.feature-card h3{
+
+    color:var(--gold);
+
+    margin-bottom:18px;
+
+    font-size:24px;
+
+}
+
+.feature-card p{
+
+    color:#d7d7d7;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   SERVICES
+=========================================================== */
+
+.services{
+
+    background:#000;
+
+}
+
+.service-grid{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+}
+
+.service-card{
+
+    background:#121212;
+
+    border:1px solid rgba(212,175,55,.12);
+
+    border-radius:22px;
+
+    padding:45px 35px;
+
+    transition:var(--transition);
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:var(--gold);
+
+    box-shadow:0 20px 45px rgba(212,175,55,.18);
+
+}
+
+.service-card h3{
+
+    color:var(--gold);
+
+    margin-bottom:20px;
+
+    font-size:28px;
+
+}
+
+.service-card p{
+
+    color:#d5d5d5;
+
+    text-align:left;
+
+    line-height:1.8;
+
+}
+/* ===========================================================
+   GALLERY
+=========================================================== */
+
+.gallery{
+
+    background:#0b0b0b;
+
+}
+
+.gallery p{
+
+    margin-top:20px;
+
+    color:#cfcfcf;
+
+}
+
+/* ===========================================================
+   REVIEWS
+=========================================================== */
+
+.reviews{
+
+    background:#111111;
+
+}
+
+.reviews p{
+
+    margin-top:20px;
+
+    color:#d8d8d8;
+
+}
+
+/* ===========================================================
+   CONTACT
+=========================================================== */
+
+.contact{
+
+    background:#000;
+
+    text-align:center;
+
+}
+
+.contact .btn-primary{
+
+    display:inline-block;
+
+    margin-top:40px;
+
+}
+
+/* ===========================================================
+   FOOTER
+=========================================================== */
+
+footer{
+
+    background:#050505;
+
+    border-top:1px solid rgba(212,175,55,.15);
+
+    padding:30px 20px;
+
+    text-align:center;
+
+}
+
+footer p{
+
+    color:#bdbdbd;
+
+    font-size:15px;
+
+    letter-spacing:.5px;
+
+}
+
+/* ===========================================================
+   SIMPLE FADE EFFECT
+=========================================================== */
+
+.feature-card,
+.service-card,
+.btn-primary,
+.btn-secondary{
+
+    transition:all .35s ease;
+
+}
+/* ===========================================================
+   VERSION 2.0
+   PART 5 - RESPONSIVE DESIGN
+=========================================================== */
+
+/* ===========================
+   LARGE TABLETS
+=========================== */
+
+@media (max-width: 1100px){
+
+    .hero-content h1{
+
+        font-size:58px;
+
+    }
+
+    .hero-content p{
+
+        font-size:20px;
+
+    }
+
+}
+
+/* ===========================
+   TABLETS
+=========================== */
+
+@media (max-width: 900px){
+
+    .navbar{
+
+        height:85px;
+
+    }
+
+    .logo img{
+
+        height:60px;
+
+    }
+
+    .nav-links{
+
+        gap:25px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:48px;
+
+    }
+
+    .hero-content p{
+
+        font-size:19px;
+
+    }
+
+    .features{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .service-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+    .navbar{
+
+        height:80px;
+
+    }
+
+    .logo img{
+
+        height:55px;
+
+    }
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+    .nav-links{
+
+        position:absolute;
+
+        top:80px;
+
+        left:0;
+
+        width:100%;
+
+        background:#0d0d0d;
+
+        flex-direction:column;
+
+        gap:0;
+
+        display:none;
+
+        border-top:1px solid rgba(212,175,55,.2);
+
+    }
+
+    .nav-links.active{
+
+        display:flex;
+
+    }
+
+    .nav-links li{
+
+        width:100%;
+
+        text-align:center;
+
+        border-bottom:1px solid rgba(255,255,255,.05);
+
+    }
+
+    .nav-links a{
+
+        display:block;
+
+        padding:18px;
+
+    }
+
+    .hero{
+
+        height:90vh;
+
+    }
+
+    .hero-content{
+
+        width:92%;
+
+    }
+
+    .hero-content h1{
+
+        font-size:40px;
+
+    }
+
+    .hero-content p{
+
+        font-size:18px;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .btn-primary,
+    .btn-secondary{
+
+        width:100%;
+
+        max-width:320px;
+
+        text-align:center;
+
+    }
+
+    section{
+
+        padding:80px 0;
+
+    }
+
+    section h2{
+
+        font-size:34px;
+
+    }
+
+}
+
+/* ===========================
+   SMALL PHONES
+=========================== */
+
+@media (max-width:480px){
+
+    .logo img{
+
+        height:50px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:32px;
+
+        line-height:1.25;
+
+    }
+
+    .hero-content p{
+
+        font-size:16px;
+
+    }
+
+    .feature-card{
+
+        padding:30px 22px;
+
+    }
+
+    .service-card{
+
+        padding:30px 22px;
+
+    }
+
+    section h2{
+
+        font-size:30px;
+
+    }
+
+}
