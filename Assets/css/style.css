@@ -836,13 +836,31 @@ ul{
 
 .hero-content h2{
 
-    font-size:1.45rem;
+    display:inline-block;
 
-    color:var(--primary);
+    margin:35px auto;
 
-    font-weight:500;
+    padding:14px 28px;
 
-    margin-bottom:26px;
+    border:1px solid rgba(200,169,90,.35);
+
+    border-radius:50px;
+
+    background:rgba(200,169,90,.10);
+
+    color:#F4D06F;
+
+    font-size:1.15rem;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    text-shadow:0 0 12px rgba(244,208,111,.30);
+
+    backdrop-filter:blur(8px);
 
 }
 
@@ -956,16 +974,13 @@ ul{
 
     justify-content:center;
 
-    align-items:center;
+    gap:45px;
 
-    gap:35px;
+    margin-top:45px;
 
     flex-wrap:wrap;
 
-    margin-top:55px;
-
 }
-
 .hero-features div{
 
     display:flex;
@@ -974,22 +989,20 @@ ul{
 
     gap:10px;
 
-    color:#FFFFFF;
-
-    font-size:.95rem;
+    color:#ffffff;
 
     font-weight:500;
 
-}
+    font-size:.98rem;
 
+}
 .hero-features i{
 
-    color:var(--primary);
+    color:#F4D06F;
 
-    font-size:18px;
+    font-size:1rem;
 
 }
-
 /* ==========================================================
    SCROLL INDICATOR
 ========================================================== */
@@ -1140,7 +1153,7 @@ ul{
 
     #hero{
 
-        min-height:92vh;
+        min-height:88vh;
 
     }
 
