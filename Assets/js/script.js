@@ -90,3 +90,30 @@ if (footer) {
 }
 
 console.log("✅ Kamaria Sparkle Events Version 2.0 Loaded Successfully");
+/*=========================================
+SCROLL REVEAL
+=========================================*/
+
+const reveals = document.querySelectorAll(".reveal");
+
+function revealElements(){
+
+    const trigger = window.innerHeight * 0.88;
+
+    reveals.forEach(item=>{
+
+        const top = item.getBoundingClientRect().top;
+
+        if(top < trigger){
+
+            item.classList.add("active");
+
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll", revealElements);
+
+window.addEventListener("load", revealElements);
