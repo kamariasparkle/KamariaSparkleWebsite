@@ -18,9 +18,6 @@ menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 
 });
-
-});
-
 /* ===========================
    CLOSE MENU WHEN A LINK IS CLICKED
 =========================== */
