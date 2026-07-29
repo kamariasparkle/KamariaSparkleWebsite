@@ -13,8 +13,6 @@ const navLinks = document.querySelector(".nav-links");
 
 menuToggle.addEventListener("click", () => {
 
-    alert("Hamburger clicked!");
-
     navLinks.classList.toggle("active");
 
 });
