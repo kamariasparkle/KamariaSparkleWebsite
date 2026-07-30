@@ -504,7 +504,7 @@ ul{
 
         left:50%;
 
-        transform:translateX(-50%);
+        transform:translate(-50%,-20px);
 
         width:95%;
 
@@ -534,7 +534,10 @@ ul{
 
         pointer-events:none;
 
-        transition:all .35s ease;
+        transition:
+         opacity .35s ease,
+         transform .35s ease,
+         visibility .35s ease;
 
     }
 
@@ -545,6 +548,7 @@ ul{
         visibility:visible;
 
         pointer-events:auto;
+        transform:translate(-50%,0);
         z-index:10000;
 
     }

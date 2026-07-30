@@ -3,33 +3,57 @@
    Version 2.0
    script.js
 =========================================================== */
-
 /* ===========================
    MOBILE MENU
 =========================== */
 
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
+const menuIcon = menuToggle.querySelector("i");
 
 menuToggle.addEventListener("click", () => {
 
     navLinks.classList.toggle("active");
 
+    if(navLinks.classList.contains("active")){
+        menuIcon.classList.remove("fa-bars");
+        menuIcon.classList.add("fa-xmark");
+    }else{
+        menuIcon.classList.remove("fa-xmark");
+        menuIcon.classList.add("fa-bars");
+    }
+
 });
-/* ===========================
-   CLOSE MENU WHEN A LINK IS CLICKED
-=========================== */
 
-document.querySelectorAll(".nav-links a").forEach(link => {
+/* Close menu when a link is clicked */
 
-    link.addEventListener("click", () => {
+document.querySelectorAll(".nav-links a").forEach(link=>{
+
+    link.addEventListener("click",()=>{
 
         navLinks.classList.remove("active");
+
+        menuIcon.classList.remove("fa-xmark");
+        menuIcon.classList.add("fa-bars");
 
     });
 
 });
 
+/* Close menu when scrolling */
+
+window.addEventListener("scroll",()=>{
+
+    if(navLinks.classList.contains("active")){
+
+        navLinks.classList.remove("active");
+
+        menuIcon.classList.remove("fa-xmark");
+        menuIcon.classList.add("fa-bars");
+
+    }
+
+});
 /* ===========================
    STICKY HEADER ON SCROLL
 =========================== */
