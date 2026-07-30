@@ -2773,3 +2773,6 @@ SCROLL REVEAL ANIMATIONS
     transition-delay:.40s;
 
 }
+body.menu-open{
+    overflow:hidden;
+}
