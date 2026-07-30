@@ -14,7 +14,6 @@ const menuIcon = menuToggle.querySelector("i");
 menuToggle.addEventListener("click", () => {
 
     navLinks.classList.toggle("active");
-document.body.classList.toggle("menu-open");
     if(navLinks.classList.contains("active")){
         menuIcon.classList.remove("fa-bars");
         menuIcon.classList.add("fa-xmark");
@@ -32,7 +31,6 @@ document.querySelectorAll(".nav-links a").forEach(link=>{
     link.addEventListener("click",()=>{
 
         navLinks.classList.remove("active");
-document.body.classList.remove("menu-open");
         menuIcon.classList.remove("fa-xmark");
         menuIcon.classList.add("fa-bars");
 
@@ -47,7 +45,6 @@ window.addEventListener("scroll",()=>{
     if(navLinks.classList.contains("active")){
 
         navLinks.classList.remove("active");
-document.body.classList.remove("menu-open");
         menuIcon.classList.remove("fa-xmark");
         menuIcon.classList.add("fa-bars");
 
