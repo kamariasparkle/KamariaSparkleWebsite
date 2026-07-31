@@ -2773,3 +2773,53 @@ SCROLL REVEAL ANIMATIONS
     transition-delay:.40s;
 
 }
+/* ==========================================
+PREMIUM LOADER
+========================================== */
+
+#loader{
+    position:fixed;
+    inset:0;
+    background:#ffffff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+    transition:.7s ease;
+}
+
+#loader.fade{
+    opacity:0;
+    visibility:hidden;
+}
+
+.loader-content{
+    text-align:center;
+}
+
+.loader-content img{
+    width:110px;
+    margin-bottom:25px;
+}
+
+.loader-spinner{
+    width:55px;
+    height:55px;
+    border:4px solid #eeeeee;
+    border-top:4px solid #d4af37;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+    margin:0 auto 20px;
+}
+
+.loader-content p{
+    font-size:15px;
+    color:#777;
+    letter-spacing:1px;
+}
+
+@keyframes spin{
+    to{
+        transform:rotate(360deg);
+    }
+}
