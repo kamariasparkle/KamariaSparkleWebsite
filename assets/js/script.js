@@ -137,14 +137,3 @@ function revealElements(){
 window.addEventListener("scroll", revealElements);
 
 window.addEventListener("load", revealElements);
-/* ==========================================
-PAGE LOADER
-========================================== */
-
-window.addEventListener("load", () => {
-
-    const loader = document.getElementById("loader");
-
-    loader.classList.add("fade");
-
-});
