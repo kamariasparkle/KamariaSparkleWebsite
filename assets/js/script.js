@@ -137,3 +137,122 @@ function revealElements(){
 window.addEventListener("scroll", revealElements);
 
 window.addEventListener("load", revealElements);
+
+/* ==========================================================
+   PREMIUM PORTFOLIO LIGHTBOX v1.2
+========================================================== */
+
+const portfolioItems = document.querySelectorAll(".portfolio-item");
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightbox-image");
+const closeLightbox = document.querySelector(".close-lightbox");
+
+const prevButton = document.querySelector(".lightbox-prev");
+const nextButton = document.querySelector(".lightbox-next");
+
+const currentImage = document.getElementById("current-image");
+const totalImages = document.getElementById("total-images");
+
+const images = [];
+
+portfolioItems.forEach(item => {
+
+    images.push(item.dataset.image);
+
+});
+
+totalImages.textContent = images.length;
+
+let currentIndex = 0;
+
+function showImage(index){
+
+    currentIndex = index;
+
+    lightboxImage.src = images[currentIndex];
+
+    currentImage.textContent = currentIndex + 1;
+
+}
+
+portfolioItems.forEach((item,index)=>{
+
+    item.addEventListener("click",(e)=>{
+
+        e.preventDefault();
+
+        showImage(index);
+
+        lightbox.classList.add("active");
+
+    });
+
+});
+
+nextButton.addEventListener("click",()=>{
+
+    currentIndex++;
+
+    if(currentIndex >= images.length){
+
+        currentIndex = 0;
+
+    }
+
+    showImage(currentIndex);
+
+});
+
+prevButton.addEventListener("click",()=>{
+
+    currentIndex--;
+
+    if(currentIndex < 0){
+
+        currentIndex = images.length - 1;
+
+    }
+
+    showImage(currentIndex);
+
+});
+
+closeLightbox.addEventListener("click",()=>{
+
+    lightbox.classList.remove("active");
+
+});
+
+lightbox.addEventListener("click",(e)=>{
+
+    if(e.target===lightbox){
+
+        lightbox.classList.remove("active");
+
+    }
+
+});
+
+document.addEventListener("keydown",(e)=>{
+
+    if(!lightbox.classList.contains("active")) return;
+
+    if(e.key==="Escape"){
+
+        lightbox.classList.remove("active");
+
+    }
+
+    if(e.key==="ArrowRight"){
+
+        nextButton.click();
+
+    }
+
+    if(e.key==="ArrowLeft"){
+
+        prevButton.click();
+
+    }
+
+});
