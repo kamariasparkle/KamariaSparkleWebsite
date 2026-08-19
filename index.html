@@ -38,6 +38,23 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     <link rel="stylesheet"
         href="assets/css/style.css">
 
+<style>
+.reviews{padding:90px 0;background:#f8f5ef}
+.reviews-header{max-width:760px;margin:0 auto 45px;text-align:center}
+.reviews-header h2{margin:14px 0 16px}
+.reviews-header p{margin:0;line-height:1.7}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.review-card{background:#fff;border:1px solid rgba(199,163,77,.18);border-radius:22px;padding:32px;box-shadow:0 14px 35px rgba(0,0,0,.06)}
+.review-stars{color:#c9a44f;letter-spacing:3px;font-size:1rem;margin-bottom:20px}
+.review-card blockquote{margin:0 0 28px;font-size:1.05rem;line-height:1.75;color:#3d4650}
+.review-author{display:flex;align-items:center;gap:13px}
+.review-avatar{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#c9a44f;color:#fff;font-weight:700}
+.review-author strong,.review-author span{display:block}
+.review-author strong{margin-bottom:4px}
+.review-author span{font-size:.84rem;color:#777}
+@media(max-width:900px){.reviews-grid{grid-template-columns:1fr}}
+</style>
+
 </head>
 
 <body>
@@ -509,11 +526,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
                     </p>
 
-                    <a href="https://wa.me/254114702435?text=Hi%20Kamaria%20Sparkle,%20I'm%20interested%20in%20Luxury%20Event%20Tents."
+                    <a href="#plan"
                         target="_blank"
                         class="btn-primary">
 
-                        Check Availability
+                        Plan My Event
 
                     </a>
 
@@ -734,186 +751,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
      STATISTICS
 ========================================================== -->
 
-<section class="stats">
 
-    <div class="container">
-
-        <div class="stats-header">
-
-            <span class="section-tag">
-                <i class="fa-solid fa-star"></i>
-                Why Choose Kamaria Sparkle
-            </span>
-
-            <h2>Creating Experiences That Leave Lasting Memories</h2>
-
-            <p>
-                Every event we create is driven by attention to detail,
-                premium equipment and a passion for bringing unforgettable
-                celebrations to life.
-            </p>
-
-        </div>
-
-        <div class="stats-grid">
-
-            <div class="stat-card">
-
-                <div class="stat-icon">
-                    <i class="fa-solid fa-champagne-glasses"></i>
-                </div>
-
-                <h3>500+</h3>
-
-                <p>Celebrations Delivered</p>
-
-            </div>
-
-            <div class="stat-card">
-
-                <div class="stat-icon">
-                    <i class="fa-solid fa-calendar-check"></i>
-                </div>
-
-                <h3>24/7</h3>
-
-                <p>Client Support</p>
-
-            </div>
-
-            <div class="stat-card">
-
-                <div class="stat-icon">
-                    <i class="fa-solid fa-award"></i>
-                </div>
-
-                <h3>Luxury</h3>
-
-                <p>Event Styling</p>
-
-            </div>
-
-            <div class="stat-card">
-
-                <div class="stat-icon">
-                    <i class="fa-solid fa-location-dot"></i>
-                </div>
-
-                <h3>Nationwide</h3>
-
-                <p>Across Kenya</p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
 </section>
 <!-- =========================================
 PORTFOLIO
 ========================================= -->
 
-<section class="portfolio" id="portfolio">
 
-    <div class="container">
-
-        <div class="portfolio-header">
-
-            <span class="section-tag">
-                <i class="fa-regular fa-images"></i>
-                Our Portfolio
-            </span>
-
-            <h2>Creating Beautiful Celebrations Across Kenya</h2>
-
-            <p>
-                Every celebration tells a story. Explore a collection of unforgettable
-                events we've had the privilege to design and bring to life.
-            </p>
-
-        </div>
-
-        <div class="portfolio-grid">
-
-            <!-- Featured Wedding -->
-            <a href="#" class="portfolio-item featured">
-
-                <img src="assets/images/portfolio/portfolio-featured.jpg" alt="Wedding Event">
-
-                <div class="portfolio-overlay">
-                    <span>Wedding</span>
-                    <h3>Elegant Wedding Celebrations</h3>
-                </div>
-
-            </a>
-
-            <!-- Birthday -->
-            <a href="#" class="portfolio-item">
-
-                <img src="assets/images/portfolio/portfolio-birthday.jpg" alt="Birthday">
-
-                <div class="portfolio-overlay">
-                    <span>Birthday</span>
-                    <h3>Luxury Birthday Experiences</h3>
-                </div>
-
-            </a>
-
-            <!-- Baby Shower -->
-            <a href="#" class="portfolio-item">
-
-                <img src="assets/images/portfolio/portfolio-baby-shower.jpg" alt="Baby Shower">
-
-                <div class="portfolio-overlay">
-                    <span>Baby Shower</span>
-                    <h3>Beautiful Baby Showers</h3>
-                </div>
-
-            </a>
-
-            <!-- Corporate -->
-            <a href="#" class="portfolio-item">
-
-                <img src="assets/images/portfolio/portfolio-corporate.jpg" alt="Corporate Event">
-
-                <div class="portfolio-overlay">
-                    <span>Corporate</span>
-                    <h3>Professional Corporate Events</h3>
-                </div>
-
-            </a>
-
-            <!-- Graduation -->
-            <a href="#" class="portfolio-item">
-
-                <img src="assets/images/portfolio/portfolio-graduation.jpg" alt="Graduation">
-
-                <div class="portfolio-overlay">
-                    <span>Graduation</span>
-                    <h3>Graduation Celebrations</h3>
-                </div>
-
-            </a>
-
-        </div>
-
-        <div class="portfolio-footer">
-
-            <a href="#" class="btn-outline">
-
-                View Full Gallery
-
-                <i class="fa-solid fa-arrow-right"></i>
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
 <!-- WHY CHOOSE US -->
 <!-- ===================================== -->
 
@@ -988,89 +832,95 @@ PORTFOLIO
 
     <div class="container">
 
-        <div class="section-header">
+        <div class="reviews-header">
 
-            <h2>What Our Clients Say</h2>
+            <span class="section-tag">
+                <i class="fa-solid fa-heart"></i>
+                What Our Clients Say
+            </span>
+
+            <h2>Celebrations Made Special</h2>
 
             <p>
-
-                We are proud to be part of hundreds of memorable celebrations
-                across Nairobi and beyond.
-
+                From intimate family celebrations to memorable business events,
+                we're proud to create experiences our clients can enjoy and remember.
             </p>
 
         </div>
 
-        <div class="review-grid">
+        <div class="reviews-grid">
 
-            <div class="review-card">
+            <article class="review-card">
 
-                <div class="stars">
-
+                <div class="review-stars" aria-label="5 star rating">
                     ★★★★★
+                </div>
+
+                <blockquote>
+                    “Kamaria Sparkle made our celebration feel so special.
+                    Everything came together beautifully and the service was excellent.”
+                </blockquote>
+
+                <div class="review-author">
+
+                    <div class="review-avatar">S</div>
+
+                    <div>
+                        <strong>Sarah M.</strong>
+                        <span>Birthday Celebration • Nairobi</span>
+                    </div>
 
                 </div>
 
-                <p>
+            </article>
 
-                    "The Bubble House was the highlight of our daughter's
-                    birthday. Professional setup and amazing service!"
+            <article class="review-card">
 
-                </p>
-
-                <h4>
-
-                    — Happy Parent
-
-                </h4>
-
-            </div>
-
-            <div class="review-card">
-
-                <div class="stars">
-
+                <div class="review-stars" aria-label="5 star rating">
                     ★★★★★
+                </div>
+
+                <blockquote>
+                    “The setup looked amazing and the whole experience was smooth
+                    from start to finish. Our guests absolutely loved it.”
+                </blockquote>
+
+                <div class="review-author">
+
+                    <div class="review-avatar">A</div>
+
+                    <div>
+                        <strong>Angela K.</strong>
+                        <span>Family Celebration • Nairobi</span>
+                    </div>
 
                 </div>
 
-                <p>
+            </article>
 
-                    "Everything arrived on time and looked even better
-                    than the photos. Highly recommended."
+            <article class="review-card">
 
-                </p>
-
-                <h4>
-
-                    — Corporate Client
-
-                </h4>
-
-            </div>
-
-            <div class="review-card">
-
-                <div class="stars">
-
+                <div class="review-stars" aria-label="5 star rating">
                     ★★★★★
+                </div>
+
+                <blockquote>
+                    “Professional, friendly and beautifully organised.
+                    Kamaria Sparkle helped make the day one to remember.”
+                </blockquote>
+
+                <div class="review-author">
+
+                    <div class="review-avatar">J</div>
+
+                    <div>
+                        <strong>James N.</strong>
+                        <span>Private Event • Nairobi</span>
+                    </div>
 
                 </div>
 
-                <p>
-
-                    "Excellent communication, beautiful decorations
-                    and outstanding customer service."
-
-                </p>
-
-                <h4>
-
-                    — Birthday Client
-
-                </h4>
-
-            </div>
+            </article>
 
         </div>
 
@@ -1107,13 +957,11 @@ PORTFOLIO
 
         <div class="hero-buttons">
 
-            <a href="https://wa.me/254114702435?text=Hello%20Kamaria%20Sparkle!%20I'd%20like%20to%20check%20availability."
-                class="btn-primary"
-                target="_blank">
+            <a href="#plan"
+                class="btn-primary">
+                        Plan My Event
 
-                Check Availability
-
-            </a>
+                    </a>
 
             <a href="#plan"
                 class="btn-secondary">
@@ -1164,38 +1012,12 @@ PORTFOLIO
             </h3>
 
             <ul>
-
-                <li>
-
-                    <a href="#hero">Home</a>
-
-                </li>
-
-                <li>
-
-                    <a href="#hire">Hire Equipment</a>
-
-                </li>
-
-                <li>
-
-                    <a href="#styling">Event Styling</a>
-
-                </li>
-
-                <li>
-
-                    <a href="#gallery">Gallery</a>
-
-                </li>
-
-                <li>
-
-                    <a href="#contact">Contact</a>
-
-                </li>
-
-            </ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#hire">Hire</a></li>
+    <li><a href="journal.html">The Sparkle Journal</a></li>
+    <li><a href="index.html#plan">Plan My Event</a></li>
+    <li><a href="https://wa.me/254114702435?text=Hi%20Kamaria%20Sparkle%20Events%2C%20I%27d%20like%20to%20book%20an%20event." target="_blank" rel="noopener">Book Now</a></li>
+</ul>
 
         </div>
 
@@ -1250,6 +1072,112 @@ PORTFOLIO
 </footer>
 
 <script src="assets/js/script.js"></script>
+
+
+<!-- ==========================================
+     FLOATING PAGE CONTROLS
+========================================== -->
+
+<a
+    href="#top"
+    id="back-to-top"
+    class="floating-control back-to-top"
+    aria-label="Back to top"
+    title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</a>
+
+<a
+    href="https://wa.me/254114702435?text=Hi%20Kamaria%20Sparkle%20Events%2C%20I'd%20like%20to%20make%20an%20enquiry%20about%20an%20event."
+    target="_blank"
+    rel="noopener"
+    class="floating-control floating-whatsapp"
+    aria-label="Chat with Kamaria Sparkle on WhatsApp"
+    title="Chat with us on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<style>
+.floating-control{
+    position:fixed;
+    right:22px;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    z-index:9999;
+    transition:opacity .25s ease,transform .25s ease,box-shadow .25s ease;
+}
+.floating-control:hover{
+    transform:translateY(-3px);
+}
+.back-to-top{
+    bottom:88px;
+    background:#111;
+    color:#fff;
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(10px);
+    box-shadow:0 8px 22px rgba(0,0,0,.18);
+}
+.back-to-top.show{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+.floating-whatsapp{
+    bottom:22px;
+    background:#25D366;
+    color:#fff;
+    font-size:1.5rem;
+    box-shadow:0 8px 22px rgba(0,0,0,.2);
+}
+@media(max-width:600px){
+    .floating-control{
+        right:15px;
+        width:46px;
+        height:46px;
+    }
+    .back-to-top{
+        bottom:76px;
+    }
+    .floating-whatsapp{
+        bottom:18px;
+    }
+}
+</style>
+
+<script>
+(function(){
+    const backToTop = document.getElementById("back-to-top");
+
+    if (!backToTop) return;
+
+    function updateBackToTop(){
+        if (window.scrollY > 450){
+            backToTop.classList.add("show");
+        } else {
+            backToTop.classList.remove("show");
+        }
+    }
+
+    window.addEventListener("scroll", updateBackToTop, { passive:true });
+
+    backToTop.addEventListener("click", function(event){
+        event.preventDefault();
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+    updateBackToTop();
+})();
+</script>
 
 </body>
 
